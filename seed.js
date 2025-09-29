@@ -22,5 +22,6 @@ async function main() {
     ]);
 
     console.log('Database seeded successfully');
+    await Mongoose.disconnect();
 }
 
