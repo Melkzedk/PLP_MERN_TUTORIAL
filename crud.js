@@ -1,0 +1,16 @@
+const { connectDB, mongoose } = require('./db');
+const Task = require('./Model/tasks');
+const User = require('./Model/User');
+
+async function main() {
+    await connectDB();
+
+    //CREATE
+    const john = await User.create({ name: 'John Doe', email: 'johndoe123@gmail.com' });
+    console.log('User Created:', john);
+
+    //READ
+    const users = await User.find();
+    console.log('All Users:', users);
+    
+}
