@@ -25,3 +25,5 @@ async function main() {
     await Mongoose.disconnect();
 }
 
+main();
+
