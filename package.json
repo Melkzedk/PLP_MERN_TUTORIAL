@@ -13,5 +13,5 @@
     "dotenv": "^17.2.2",
     "mongoose": "^8.18.2"
   },
-  "type": "module"
+  "type": "commonjs"
 }
