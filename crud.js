@@ -14,8 +14,12 @@ async function main() {
     //console.log('All Users:', users);
 
     //UPDATE
-    await User.updateOne({ email: 'johnkimani123@gmail.com' }, {role: 'admin'});
-    console.log('User Updated');
+    //await User.updateOne({ email: 'johnkimani123@gmail.com' }, {role: 'admin'});
+    //console.log('User Updated');
+
+    //DELETE
+    await User.deleteOne({ email: 'johnkimani123@gmail.com' });
+    console.log('User Deleted');
 }
 
 main();
