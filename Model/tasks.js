@@ -7,3 +7,7 @@ const taskSchema = new Schema({
   status: { type: String, enum: ['pending', 'in-progress', 'completed'], default: 'pending' },
   owner: {type: String}
 }, { timestamps: true });
+
+const Task = mongoose.model('Task', taskSchema);
+
+module.exports = Task;
