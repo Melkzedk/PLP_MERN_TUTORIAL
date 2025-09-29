@@ -20,5 +20,7 @@ async function main() {
         { title: 'Task 2', status: 'in-progress', owner: users[1]._id },
         { title: 'Task 3', status: 'completed', owner: users[2]._id },
     ]);
+
+    console.log('Database seeded successfully');
 }
 
