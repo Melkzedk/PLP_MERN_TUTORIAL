@@ -10,11 +10,12 @@ async function main() {
     //console.log('User Created:', john);
 
     //READ
-    const users = await User.find();
-    console.log('All Users:', users);
+    //const users = await User.find();
+    //console.log('All Users:', users);
 
     //UPDATE
-    //await User.updateOne({ name: 'John Doe' }, { email: '
+    await User.updateOne({ email: 'johnkimani123@gmail.com' }, {role: 'admin'});
+    console.log('User Updated');
 }
 
 main();
