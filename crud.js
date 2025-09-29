@@ -6,20 +6,22 @@ async function main() {
     await connectDB();
 
     //CREATE
-    //const john = await User.create({ name: 'John Kimani', email: 'johnkimani@gmail.com' });
-    //console.log('User Created:', john);
+    const john = await User.create({ name: 'John Kimani', email: 'johnkimani@gmail.com' });
+    console.log('User Created:', john);
 
     //READ
-    //const users = await User.find();
-    //console.log('All Users:', users);
+    const users = await User.find();
+    console.log('All Users:', users);
 
     //UPDATE
-    //await User.updateOne({ email: 'johnkimani123@gmail.com' }, {role: 'admin'});
-    //console.log('User Updated');
+    await User.updateOne({ email: 'johnkimani123@gmail.com' }, {role: 'admin'});
+    console.log('User Updated');
 
     //DELETE
-    await User.deleteOne({ email: 'johnkimani123@gmail.com' });
+    await User.deleteOne({ email: 'johnkimani@gmail.com' });
     console.log('User Deleted');
+
+    //
 }
 
 main();
