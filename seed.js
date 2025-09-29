@@ -1,4 +1,4 @@
-const {connectDB, Mongoose} = require('../db    ');
+const { connectDB, mongoose } = require('./db');
 const Task = require('./Model/tasks');
 const User = require('./Model/User');
 
@@ -22,8 +22,7 @@ async function main() {
     ]);
 
     console.log('Database seeded successfully');
-    await Mongoose.disconnect();
+    await mongoose.disconnect();
 }
 
 main();
-
