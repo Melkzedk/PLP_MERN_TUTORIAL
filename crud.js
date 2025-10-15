@@ -20,7 +20,6 @@ async function main() {
     //DELETE
     await User.deleteOne({ email: 'johnkimani@gmail.com' });
     console.log('User Deleted');
-    mongoose.connection.close();
  
     //
 }
