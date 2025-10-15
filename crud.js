@@ -15,7 +15,7 @@ async function main() {
 
     //UPDATE
     await User.updateOne({ email: 'johnkimani123@gmail.com' }, {role: 'admin'});
-    console.log('User Updat');
+    console.log('User Updated');
 
     //DELETE
     await User.deleteOne({ email: 'johnkimani@gmail.com' });
