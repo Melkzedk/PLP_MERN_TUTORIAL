@@ -1,3 +1,6 @@
+
+//User model with name, email, role fields and timestamps
+
 const { mongoose } = require('../db');
 const { Schema } = mongoose;
 
@@ -11,5 +14,3 @@ const User = mongoose.model('User', userSchema);
 
 module.exports = User;
 
-
-//User model with name, email, role fields and timestamps
