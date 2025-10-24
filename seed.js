@@ -11,7 +11,7 @@ async function main() {
 
     const users = await User.insertMany([
         { name: 'Alice', email: 'alice@example.com', role: 'admin' },
-        { name: 'Bob', email: 'Bob123@gmail.com', role: 'user' },
+        { name: 'Bob', email: 'Bob@gmail.com', role: 'user' },
         { name: 'Charlie', email: 'charlie@gmail.com', role: 'user' },
     ]);
 
